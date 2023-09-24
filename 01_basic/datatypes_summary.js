@@ -26,3 +26,26 @@ const myFunction = function(){
     console.log("Hello World");
 }
 myFunction();
+
+//**************************************** */
+
+// Stack (Primitive ) we get copy, Heap (Non-Primitive) reference is same in heap
+
+let myYtName = "Shreyash";
+
+let anotherName= myYtName;
+anotherName= "Suresh";
+console.log(myYtName);
+console.log(anotherName);
+
+let user1 = {
+    email :"user@google.com",
+    upi: "user@paytm"
+}
+console.log(user1);
+
+let user2 = user1;
+
+user2.email="shreyash@google.com";
+console.log(user1.email);
+console.log(user2.email);
