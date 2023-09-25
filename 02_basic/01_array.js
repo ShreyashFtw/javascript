@@ -37,3 +37,5 @@ console.log("B ", myArr);
 const myn2 = myArr.splice(1, 3)//original array also manipulated main point
 console.log("C ", myArr);
 console.log(myn2);
+
+//splice not only gets you specified portion of array but also maipulates your original array
