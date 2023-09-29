@@ -35,7 +35,7 @@ const addTwo = (num1, num2) => {
    }
 
    // const addTwo = (num1, num2) =>  (num1 + num2) implicit funcn
-   const addTwo = (num1, num2) => ({username: "shreyash"})
+//    const addTwo = (num1, num2) => ({username: "shreyash"})
 
    console.log(addTwo(3,4));
 
