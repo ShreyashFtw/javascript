@@ -18,13 +18,30 @@
         li.innerHTML = `${langName}`;
         document.querySelector('.language').appendChild(li);
 
-    }
+    }//Traversing hoti hai appendChild is better(2nd method)
     addLanguage("C++");
     addLanguage("Python");
 
     function addOptiLanguage(langName) {
-        
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
     }
+    addOptiLanguage("Java");
+    //Edit
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    //secondLang.innerHTML = "C";
+    const newLi = document.createElement("li");
+    newLi.textContent = "C";
+    secondLang.replaceWith(newLi);
+
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = "<li>Typescript</li>"
+
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+
 </script>
 
 </html>
