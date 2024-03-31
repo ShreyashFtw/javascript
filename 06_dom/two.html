@@ -7,7 +7,7 @@
     <title>DOM</title>
 </head>
 
-<body>
+<body style="background-color: #212121;color: #fff;">
     <div class="parent">
         <div class="day">Monday</div>
         <div class="day">Tuesday</div>
@@ -15,6 +15,31 @@
         <div class="day">Thursday</div>
     </div>
 
+
+
 </body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children[0].innerHTML);
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML)   
+    // }
+
+    parent.children[0].style.color = 'red'
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);//Tuesday
+
+    console.log("NODES :", parent.childNodes);
+
+
+</script>
+
 
 </html>
